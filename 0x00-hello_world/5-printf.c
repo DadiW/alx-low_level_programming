@@ -1,13 +1,7 @@
-/*
- * Main entry point
- */
-
 #include <stdio.h>
-/*
- * Use the function printf
- * You are not allowed to use the function puts
- * Your program should return 0
- * Your program should compile without warning when using the -Wall gcc option
+/**
+ * Main -Entry point
+ * Return: Always 0 (success)
  */
 
 int main(void)

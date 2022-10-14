@@ -7,6 +7,7 @@
 int main(void)
 {
 	int ch, i, n;
+
 	for (ch = '0'; ch < '8'; ch++)
 	{
 		i = ch + 1;

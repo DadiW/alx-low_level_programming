@@ -12,7 +12,8 @@ int main(void)
 	{
 		putchar(ch);
 		putchar(44);
-		putchar(32);
+		if (ch != '9')
+			putchar(32);
 	}
 	putchar(10);
 	return (0);

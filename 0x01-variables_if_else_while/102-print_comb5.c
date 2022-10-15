@@ -10,13 +10,13 @@ int main(void)
 
 	for (a = '0'; a <= '9'; a++)
 	{
-		b = a;
+		b = '0';
 		while (b <= '9')
 		{
-			c = b;
+			c = '0';
 			while (c <= '9')
 			{
-				d = c + 1;
+				d = '1';
 				while (d <= '9')
 				{
 					putchar(a);
@@ -24,7 +24,10 @@ int main(void)
 					putchar(32);
 					putchar(c);
 					putchar(d);
-					putchar(44);
+					if (a != '9' && b != '8')
+					{
+						putchar(44);
+					}
 					d++;
 				}
 				c++;

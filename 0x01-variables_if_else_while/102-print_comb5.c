@@ -11,7 +11,7 @@ int main(void)
 	for (a = '0'; a <= '9'; a++)
 	{
 		b = '0';
-		while (b <= '9')
+		while (b <= '8')
 		{
 			c = '0';
 			while (c <= '9')

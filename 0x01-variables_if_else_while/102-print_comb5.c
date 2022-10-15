@@ -1,44 +1,40 @@
 #include <stdio.h>
 /**
- * main - main function
- * description: two two digit combination
- * Return: value 0 for success
+ * main - Prints 3 combination of numbers
+ * Return: Always (Success)
  */
-void twodigit(int a);
 int main(void)
 {
-	int a, b;
-	
-	for (a = 0; a <= 98; a++)
+int c, i, k, j;
+for (c = 48; c <= 57; c++)
+{
+	for (i = 48; i <= 57; i++)
 	{
-		for (b = a + 1; b <= 99; b++)
+		for (k = 48; k <= 57; k++)
 		{
-			if (a <= 9)
+			for (j = 48; j <= 57; j++)
 			{
-				twodigit(a);
-				putchar(32);
-			}
-			if (b <= 9)
-			{
-				twodigit(b);
-			}
-			if (a >9 || b > 9)
-			{
-				putchar(a);
-				putchar(32);
-				putchar(b);
-			}
-			if (a != 98)
-			{
-				putchar(44);
+				if (((k + j) > (c + i) &&  k >= c) || c < k)
+				{
+					putchar(c);
+					putchar(i);
+					putchar(' ');
+					putchar(k);
+					putchar(j);
+				if (c + i + k + j == 227 && c == 57)
+				{
+				break;
+				}
+				else
+				{
+				putchar(',');
+				putchar(' ');
+				}
+				}
 			}
 		}
 	}
-	putchar(10);
-	return (0);
 }
-void twodigit(int a)
-{
-	putchar(48);
-	putchar(a);
+putchar('\n');
+return (0);
 }

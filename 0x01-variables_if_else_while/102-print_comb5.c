@@ -4,38 +4,41 @@
  * description: two two digit combination
  * Return: value 0 for success
  */
+void twodigit(int a);
 int main(void)
 {
-	int a, b, c, d;
-
-	for (a = '0'; a <= '9'; a++)
+	int a, b;
+	
+	for (a = 0; a <= 98; a++)
 	{
-		b = '0';
-		while (b <= '8')
+		for (b = a + 1; b <= 99; b++)
 		{
-			c = '0';
-			while (c <= '9')
+			if (a <= 9)
 			{
-				d = '1';
-				while (d <= '9')
-				{
-					putchar(a);
-					putchar(b);
-					putchar(32);
-					putchar(c);
-					putchar(d);
-					if (a != '9' && b != '8')
-					{
-						putchar(44);
-					}
-					d++;
-				}
-				c++;
+				twodigit(a);
+				putchar(32);
 			}
-			b++;
+			if (b <= 9)
+			{
+				twodigit(b);
+			}
+			if (a >9 || b > 9)
+			{
+				putchar(a);
+				putchar(32);
+				putchar(b);
+			}
+			if (a != 98)
+			{
+				putchar(44);
+			}
 		}
-
 	}
 	putchar(10);
 	return (0);
+}
+void twodigit(int a)
+{
+	putchar(48);
+	putchar(a);
 }

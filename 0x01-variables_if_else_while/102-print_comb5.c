@@ -5,23 +5,24 @@
  */
 int main(void)
 {
-int c, i, k, j;
-for (c = 48; c <= 57; c++)
+int a, b, c, d;
+
+for (a = 48; a <= 57; a++)
 {
-	for (i = 48; i <= 57; i++)
+	for (b = 48; b <= 57; b++)
 	{
-		for (k = 48; k <= 57; k++)
+		for (c = 48; c <= 57; c++)
 		{
-			for (j = 48; j <= 57; j++)
+			for (d = 48; d <= 57; d++)
 			{
-				if (((k + j) > (c + i) &&  k >= c) || c < k)
+				if (((c + d) > (a + b) &&  c >= a) || a < c)
 				{
-					putchar(c);
-					putchar(i);
+					putchar(a);
+					putchar(b);
 					putchar(' ');
-					putchar(k);
-					putchar(j);
-				if (c + i + k + j == 227 && c == 57)
+					putchar(c);
+					putchar(d);
+				if (a + b + c + d == 227 && a == 57)
 				{
 				break;
 				}

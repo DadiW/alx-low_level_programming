@@ -9,6 +9,6 @@ int main(void)
 {
 	char c;
 
-	c = write(1, "_putchar\n", 8);
+	c = write(1, "_putchar\n", 9);
 	return (0);
 }

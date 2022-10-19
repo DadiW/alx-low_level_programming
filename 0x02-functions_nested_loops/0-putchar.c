@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * main - the main function
  * description: prints putchar
@@ -8,6 +9,13 @@
  */
 int main(void)
 {
-	write(1, "_putchar\n", 9);
+	char *c = "_putchar";
+
+	while (*c)
+	{
+		_putchar(*c);
+		c++;
+	}
+	_putchar('\n');
 	return (0);
 }

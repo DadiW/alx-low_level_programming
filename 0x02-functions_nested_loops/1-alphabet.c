@@ -6,7 +6,7 @@
  * description: lower case alphabet
  * Return: value 0 for sucees
  */
-int main(void)
+void print_alphabet(void)
 {
 	char c;
 
@@ -14,6 +14,6 @@ int main(void)
 	{
 		_putchar(c);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }

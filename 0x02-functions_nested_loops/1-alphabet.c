@@ -6,19 +6,14 @@
  * description: lower case alphabet
  * Return: value 0 for sucees
  */
-void print_alphabet(void);
 int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-void print_alphabet(void)
 {
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(c);
+		_putchar(c);
 	}
-	putchar(10);
+	putchar('\n');
+	return (0);
 }

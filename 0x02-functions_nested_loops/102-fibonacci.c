@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-	int i = 1, j = 2, n, sum = 0;
+	long int i = 1, j = 2, n, sum = 0;
 
-	printf("%i", i);
+	printf("%lu", i);
 	printf(", ");
-	printf("%i", j);
+	printf("%lu", j);
 	printf(", ");
 	for (n = 1; n < 49; n++)
 	{
 		sum = i + j;
 		i = j;
 		j = sum;
-		printf("%i", sum);
+		printf("%lu", sum);
 		printf(", ");
 	}
 	return (0);

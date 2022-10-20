@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_times_table - Entry point
  * @n: input
@@ -10,24 +11,24 @@ void print_times_table(int n)
 
 	if (n == 0)
 	{
-		_putchar('0');
-		_putchar(' ');
+		printf("0");
+		printf(" ");
 	}
 	if (n > 0 && n <= 15)
 	{
 		for (i = 0; i <= n; i++)
 		{
-			_putchar('0');
-			_putchar(',');
-			_putchar(' ');
+			printf("0");
+			printf(",");
+			printf(" ");
 			for (r = i; r <= n; r++)
 			{
 				result = i*r;
-				_putchar(result);
-				_putchar(',');
-				_putchar(' ');
+				printf("result");
+				printf(",");
+				printf(" ");
 			}
-			_putchar('\n');
+			printf("\n");
 		}
 	}
 }

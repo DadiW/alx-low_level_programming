@@ -11,24 +11,24 @@ void print_times_table(int n)
 
 	if (n == 0)
 	{
-		printf("0");
-		printf(" ");
+		_putchar(n);
+		_putchar(32);
 	}
 	if (n > 0 && n <= 15)
 	{
 		for (i = 0; i <= n; i++)
 		{
-			printf("0");
-			printf(",");
-			printf(" ");
+			_putchar(i);
+			_putchar(44);
+			_putchar(32);
 			for (r = i; r <= n; r++)
 			{
 				result = i*r;
-				printf("result");
-				printf(",");
-				printf(" ");
+				_putchar(result);
+				_putchar(44);
+				_putchar(32);
 			}
-			printf("\n");
+			_putchar(10);
 		}
 	}
 }

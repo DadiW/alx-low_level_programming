@@ -11,14 +11,13 @@ int main(void)
 	printf("%lu", i);
 	printf(", ");
 	printf("%lu", j);
-	printf(", ");
 	for (n = 1; n < 49; n++)
 	{
 		sum = i + j;
 		i = j;
 		j = sum;
-		printf("%lu", sum);
 		printf(", ");
+		printf("%lu", sum);
 	}
 	return (0);
 }

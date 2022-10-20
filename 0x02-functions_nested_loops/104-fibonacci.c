@@ -8,9 +8,9 @@ int main(void)
 {
 	double i = 1, j = 2, f, s;
 
-	printf("%f", i);
+	printf("%lu", i);
 	printf(", ");
-	printf("%f", j);
+	printf("%lu", j);
 	for (s = 1; s <= 96; s++)
 	{                
 		putchar(44);
@@ -18,7 +18,7 @@ int main(void)
 		f = i + j;
 		i = j;
 		j = f;
-		printf("%f", f);
+		printf("%lu", f);
 	}
 	printf("\n");
 	return (0);

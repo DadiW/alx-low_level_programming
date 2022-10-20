@@ -6,7 +6,7 @@
  */
 void print_times_table(int n)
 {
-	int i, r;
+	int i, r, result;
 
 	if (n == 0)
 	{
@@ -22,7 +22,8 @@ void print_times_table(int n)
 			_putchar(' ');
 			for (r = i; r <= n; r++)
 			{
-				_putchar(i*r);
+				result = i*r;
+				_putchar(result);
 				_putchar(',');
 				_putchar(' ');
 			}

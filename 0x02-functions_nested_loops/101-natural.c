@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main -  the main function
  * description: multiple of 3 or 5 and their sum below 1024
@@ -7,7 +6,8 @@
  */
 int main(void)
 {
-	int i, s = 0;
+	int i, s;
+	s = 0;
 
 	for (i = 3; i < 1024; i++)
 	{
@@ -16,6 +16,6 @@ int main(void)
 			s = s +i;
 		}
 	}
-	_putchar(s);
-	_putchar('\n');
+	printf("%d\n",s);
+	return (0);
 }

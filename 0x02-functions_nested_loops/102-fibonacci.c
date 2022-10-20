@@ -19,5 +19,6 @@ int main(void)
 		printf(", ");
 		printf("%lu", sum);
 	}
+	printf(" ");
 	return (0);
 }

@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	double i = 1, j = 2, f, s;
+	unsigned long int i = 1, j = 2, f, s;
 
 	printf("%lu", i);
 	printf(", ");

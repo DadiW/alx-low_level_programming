@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	unsigned long int i = 1, j = 2, f, s;
+	double i = 1, j = 2, f, s;
 
-	printf("%lu", i);
+	printf("%f", i);
 	printf(", ");
-	printf("%lu", j);
+	printf("%f", j);
 	for (s = 1; s <= 96; s++)
 	{                
 		putchar(44);
@@ -18,7 +18,7 @@ int main(void)
 		f = i + j;
 		i = j;
 		j = f;
-		printf("%lu", f);
+		printf("%f", f);
 	}
 	printf("\n");
 	return (0);

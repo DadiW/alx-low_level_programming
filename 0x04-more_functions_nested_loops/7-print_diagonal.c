@@ -3,7 +3,7 @@
  * print_diagonal - function
  * @n: input
  * description: diagonals
- * Return: value 0 for success
+ * Return: diagonal
  */
 void print_diagonal(int n)
 {
@@ -17,10 +17,12 @@ void print_diagonal(int n)
 			{
 				_putchar(' ');
 			}
-			_putchar(92);
+			_putchar('\\');
 			_putchar('\n');
 		}
 	}
 	else
+	{
 		_putchar('\n');
+	}
 }

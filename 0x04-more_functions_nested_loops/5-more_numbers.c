@@ -2,7 +2,8 @@
 /**
  * more_numbers - function 
  * description: prints 0 to 14 ten times
- * Return: value 0 for success
+ * _putchar only 3 times
+ * Return: 0 to 14 ten times
  */
 void more_numbers(void)
 {

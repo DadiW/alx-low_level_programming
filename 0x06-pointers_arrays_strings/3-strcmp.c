@@ -1,13 +1,15 @@
 #include "main.h"
 /**
- *
- *
+ * _strcmp - function compares two string
+ * @s1: input
+ * @s2: input
+ * Return: value of the comparison
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
+	int i;
 
-	while ((s1[i] != '\0') && (s2[i] != '\0'))
+	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
 	{
 		if (s1[i] != s2[i])
 			return (s1[i] -s2[i]);

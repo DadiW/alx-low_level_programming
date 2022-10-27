@@ -1,24 +1,27 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * rot13 - function
- * @n: input
- * Return: value for success
+ * rot13 - encoder rot13
+ * @n: pointer to string param
+ * Return: *n
  */
 char *rot13(char *n)
 {
-	int i, j;
-	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i;
+	int j;
+	char ai[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char ao[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if (n[i] == a[j])
+			if (n[i] == ai[j])
 			{
-				n[i] = b[j];
+				n[i] = ao[j];
 				break;
 			}
 		}
 	}
+	return (n);
 }

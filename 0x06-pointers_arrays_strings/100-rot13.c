@@ -14,7 +14,7 @@ char *rot13(char *n)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if (n[i] = a[j])
+			if (n[i] == a[j])
 			{
 				n[i] = b[j];
 				break;
